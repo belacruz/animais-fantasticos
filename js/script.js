@@ -11,8 +11,8 @@ import ScrollAnima from "./modules/scroll-anima.js";
 
 import DropdownMenu from "./modules/dropdown-menu.js";
 
-import initMenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import MenuMobile from "./modules/menu-mobile.js";
+import Funcionamento from "./modules/funcionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -45,5 +45,14 @@ scrollAnima.init();
 const dropDownMenu = new DropdownMenu("[data-dropdown]");
 dropDownMenu.init();
 
-initMenuMobile();
-initFuncionamento();
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]',
+  '[data-menu="list"]',
+  ["click", "touchstart"]
+);
+menuMobile.init();
+
+const funcionamento = new Funcionamento("[data-semana]");
+funcionamento.init();
+
+console.log(funcionamento);
