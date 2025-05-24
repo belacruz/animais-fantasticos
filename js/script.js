@@ -4,13 +4,9 @@ import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import fetchAnimais from "./modules/fetch-animais.js";
-
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
-
 import ScrollAnima from "./modules/scroll-anima.js";
-
 import DropdownMenu from "./modules/dropdown-menu.js";
-
 import MenuMobile from "./modules/menu-mobile.js";
 import Funcionamento from "./modules/funcionamento.js";
 
@@ -54,5 +50,3 @@ menuMobile.init();
 
 const funcionamento = new Funcionamento("[data-semana]");
 funcionamento.init();
-
-console.log(funcionamento);
